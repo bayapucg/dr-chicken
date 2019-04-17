@@ -11,7 +11,9 @@
 
 <!-- Bootstrap Core CSS -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
+<link rel="stylesheet" href="assets/css/suggestion-box.min.css">
+<link rel="stylesheet" href="assets/css/bootstrapValidator.css">
+<link rel="stylesheet" href="assets/css/dataTables.bootstrap.min.css">
 <!-- Customizable CSS -->
 <link rel="stylesheet" href="assets/css/custom.css">
 <link rel="stylesheet" href="assets/css/main.css">
@@ -29,9 +31,20 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<script src="assets/js/jquery-1.11.1.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/bootstrapValidator.js"></script> 
 </head>
 <body class="cnt-home">
-<!-- ============================================== HEADER ============================================== -->
+<style>
+.location-de::placeholder {
+	color:#fff;
+}
+.location-de:focus {
+    
+    box-shadow: none;
+}
+</style>
 <header class="header-style-1"> 
   
   <!-- ============================================== TOP MENU ============================================== -->
@@ -40,11 +53,19 @@
       <div class="header-top-inner">
         <div class="cnt-account">
           <ul class="list-unstyled">
-            <li><a href="#"><i class="icon fa fa-user"></i>My Account</a></li>
-            <li><a href="#"><i class="icon fa fa-heart"></i>Wishlist</a></li>
-            <li><a href="#"><i class="icon fa fa-shopping-cart"></i>My Cart</a></li>
-            <li><a href="#"><i class="icon fa fa-check"></i>Checkout</a></li>
-            <li><a href="#"><i class="icon fa fa-lock"></i>Login</a></li>
+            <li>
+				<i style="font-size:20px;color:#f5f5f5;" class="fa fa-map-marker" aria-hidden="true"></i>
+			</li>  
+			<li>
+				<form>
+				<input style="border-top:0px;border-left:0px;border-right:0px;background-color:#ff5722;border-radius:0px;color:#fff;border-bottom:1px solid #f5f5f578" class="form-control location-de" value="Kukkatpalli" type="text">
+				</form>
+			</li>
+            <li><a href="profile.php"><i class="icon fa fa-user"></i>My Account</a></li>
+            <li><a href="wishlist.php"><i class="icon fa fa-heart"></i>Wishlist</a></li>
+            <li><a href="cart.php"><i class="icon fa fa-shopping-cart"></i>My Cart</a></li>
+            <li><a href="checkout.php"><i class="icon fa fa-check"></i>Checkout</a></li>
+            <li><a href="signin.php"><i class="icon fa fa-lock"></i>Login</a></li>
           </ul>
         </div>
        
@@ -61,7 +82,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-3 logo-holder"> 
           <!-- ============================================================= LOGO ============================================================= -->
-          <div class="logo"> <a href="#"> <img style="margin-top:-30px;"src="assets/images/logo.png" alt="logo"> </a> </div>
+          <div class="logo"> <a href="index.php"> <img style="margin-top:-30px;"src="assets/images/logo.png" alt="logo"> </a> </div>
           <!-- /.logo --> 
           <!-- ============================================================= LOGO : END ============================================================= --> </div>
         <!-- /.logo-holder -->
@@ -83,7 +104,7 @@
                     </ul>
                   </li>
                 </ul>
-                <input class="search-field" placeholder="Search here..." />
+                <input class="search-field" name="search" id="search" placeholder="Search here..." />
                 <a class="search-button" href="#" ></a> </div>
             </form>
           </div>
@@ -98,7 +119,7 @@
             <div class="items-cart-inner">
               <div class="basket"> <i class="glyphicon glyphicon-shopping-cart"></i> </div>
               <div class="basket-item-count"><span class="count">2</span></div>
-              <div class="total-price-basket"> <span class="lbl">cart -</span> <span class="total-price"> <span class="sign">$</span><span class="value">600.00</span> </span> </div>
+              <div class="total-price-basket"> <span class="lbl">cart -</span> <span class="total-price"> <span class="sign">₹</span><span class="value">600.00</span> </span> </div>
             </div>
             </a>
             <ul class="dropdown-menu">
@@ -106,11 +127,11 @@
                 <div class="cart-item product-summary">
                   <div class="row">
                     <div class="col-xs-4">
-                      <div class="image"> <a href="#"><img src="assets/images/cart.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="#"><img src="assets/images/new-arrivals/1.png" alt=""></a> </div>
                     </div>
                     <div class="col-xs-7">
                       <h3 class="name"><a href="#">Simple Product</a></h3>
-                      <div class="price">$600.00</div>
+                      <div class="price">₹600.00</div>
                     </div>
                     <div class="col-xs-1 action"> <a href="#"><i class="fa fa-trash"></i></a> </div>
                   </div>
@@ -119,9 +140,9 @@
                 <div class="clearfix"></div>
                 <hr>
                 <div class="clearfix cart-total">
-                  <div class="pull-right"> <span class="text">Sub Total :</span><span class='price'>$600.00</span> </div>
+                  <div class="pull-right"> <span class="text">Sub Total :</span><span class='price'>₹600.00</span> </div>
                   <div class="clearfix"></div>
-                  <a href="#" class="btn btn-upper btn-primary btn-block m-t-20">Checkout</a> </div>
+                  <a href="checkout.php" class="btn btn-upper btn-primary btn-block m-t-20">Checkout</a> </div>
                 <!-- /.cart-total--> 
                 
               </li>
@@ -153,7 +174,7 @@
           <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
             <div class="nav-outer">
               <ul class="nav navbar-nav">
-                <li class="active dropdown yamm-fw"> <a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Home</a> </li>
+                <li class="active dropdown yamm-fw"> <a href="index.php" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Home</a> </li>
 				<li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Chicken</a>
                   <ul class="dropdown-menu pages">
                     <li>

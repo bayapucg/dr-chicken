@@ -1,4 +1,4 @@
-<!-- ============================================================= FOOTER ============================================================= -->
+
 <footer id="footer" class="footer color-bg">
   <div class="footer-bottom">
     <div class="container">
@@ -121,9 +121,10 @@
   </div>
 </footer>
 
-<script src="assets/js/jquery-1.11.1.min.js"></script> 
-<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/jquery.dataTables.min.js"></script> 
+<script src="assets/js/dataTables.bootstrap.min.js"></script> 
 <script src="assets/js/bootstrap-hover-dropdown.min.js"></script> 
+<script src="assets/js/suggestion-box.min.js"></script> 
 <script src="assets/js/owl.carousel.min.js"></script> 
 <script src="assets/js/echo.min.js"></script> 
 <script src="assets/js/jquery.easing-1.3.min.js"></script> 
@@ -133,6 +134,16 @@
 <script src="assets/js/bootstrap-select.min.js"></script> 
 <script src="assets/js/wow.min.js"></script> 
 <script src="assets/js/scripts.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#search').suggestionBox({
+            filter: true,
+            widthAdjustment: -8,
+            leftOffset: 4,
+            topOffset: 0,
+        }).loadSuggestions('suggestions.json');
+    });
+</script>
 </body>
 
 </html>
