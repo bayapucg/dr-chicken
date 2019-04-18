@@ -40,11 +40,6 @@
             </div>
             <!-- /.box-body -->
           </div>
-          <!-- /.box -->
-
-          <!-- About Me Box -->
-         
-          <!-- /.box -->
         </div>
         <!-- /.col -->
         <div class="col-md-9">
