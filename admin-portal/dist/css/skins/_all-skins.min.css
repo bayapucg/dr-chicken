@@ -25,7 +25,7 @@
     color: #fff
 }
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
-    background-color:#85DCB0 ;
+    background-color:#337ab7;
 }
 @media (max-width: 767px) {
     .skin-blue .main-header .navbar .dropdown-menu li.divider {

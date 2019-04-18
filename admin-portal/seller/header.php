@@ -7,19 +7,19 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
    <link href="../dist/css/bootstrapValidator.min.css" rel="stylesheet">
    
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" href="../plugins/datatables/dataTables.bootstrap.css">
-   <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="../dist/css/dataTables.bootstrap.css">
+   <link rel="stylesheet" href="../dist/css/daterangepicker.css">
   <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="../plugins/datepicker/datepicker3.css">
+  <link rel="stylesheet" href="../dist/css/datepicker3.css">
   <!-- Theme style -->
-     <link rel="stylesheet" href="../plugins/fullcalendar/fullcalendar.min.css">
+     <link rel="stylesheet" href="../dist/css/fullcalendar.min.css">
   <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
 
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -27,21 +27,21 @@
   <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
   <link rel="stylesheet" href="../dist/css/style.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="../plugins/iCheck/flat/blue.css">
+  <link rel="stylesheet" href="../dist/css/blue.css">
   <!-- Morris chart -->
-  <link rel="stylesheet" href="../plugins/morris/morris.css">
+  <link rel="stylesheet" href="../dist/css/morris.css">
   <!-- jvectormap -->
-  <link rel="stylesheet" href="../plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <link rel="stylesheet" href="../dist/css/jquery-jvectormap-1.2.2.css">
   <!-- Date Picker -->
-  <link rel="stylesheet" href="../plugins/datepicker/datepicker3.css">
+  <link rel="stylesheet" href="../dist/css/datepicker3.css">
   <!-- Daterange picker -->
-  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="../dist/css/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link rel="stylesheet" href="../dist/css/bootstrap3-wysihtml5.min.css">
 	<!-- jQuery 2.2.3 -->
-<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../dist/js/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
 
 
 <script src="../dist/js/bootstrapValidator.min.js"></script>
@@ -151,9 +151,7 @@
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
+          
         </ul>
       </div>
     </nav>
@@ -214,7 +212,7 @@
         
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-user-plus"></i> <span> Payments</span>
+            <i class="fa fa-credit-card"></i> <span> Payments</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -241,80 +239,7 @@
             
           </ul>
         </li>
-		<!--<li class="treeview">
-          <a href="#">
-            <i class="fa fa-user-md"></i> <span>Doctor</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-         <ul class="treeview-menu" style="display: none;">
-            <li>
-              <a href="add-doctor.php">add Doctor</a>
-            </li>
-            <li>
-              <a href="doctor_list.php">Doctor List</a>
-            </li>
-          </ul>
-       </li>
-		<li class="treeview">
-          <a href="classes.php">
-            <i class="fa fa-user"></i> <span>Classes</span>
-            <span class="pull-right-container">
-             
-            </span>
-          </a>
-         
-        </li>
-		<li class="treeview">
-          <a href="attendance.php">
-            <i class="fa fa-user"></i> <span>Attendance</span>
-            <span class="pull-right-container">
-             
-            </span>
-          </a>
-         
-        </li>
-		<li class="treeview">
-          <a href="subjects.php">
-            <i class="fa fa-user"></i> <span>Subjects</span>
-            <span class="pull-right-container">
-             
-            </span>
-          </a>
-        </li>
-		<li class="treeview">
-          <a href="marks.php">
-            <i class="fa fa-user"></i> <span>Marks</span>
-            <span class="pull-right-container">
-             
-            </span>
-          </a>
-        </li>
-		<li class="treeview">
-          <a href="exam.php">
-            <i class="fa fa-user"></i> <span>Exams</span>
-            <span class="pull-right-container">
-             
-            </span>
-          </a>
-        </li>
-		<li class="treeview">
-          <a href="time-table.php">
-            <i class="fa fa-user"></i> <span>Time Table</span>
-            <span class="pull-right-container">
-             
-            </span>
-          </a>
-        </li>
-		<li class="treeview">
-          <a href="transport.php">
-            <i class="fa fa-user"></i> <span>Transport</span>
-            <span class="pull-right-container">
-             
-            </span>
-          </a>
-        </li>-->
+		
     
       </ul>
     </section>
