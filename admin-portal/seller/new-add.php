@@ -2,12 +2,12 @@
 <div class="content-wrapper">
 	<section class="content-header">
 		<h1>
-       Doctor 
+       Product 
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Doctor</li>
+			<li class="active">Product</li>
 		</ol>
 	</section>
 	<section class="content">
@@ -17,67 +17,70 @@
 				<!-- general form elements -->
 				<div class="box box-primary">
 					<div class="box-header with-border">
-						<h3 class="box-title">Add Doctor</h3>
-						<a href="doctor_list.php" class=" pull-right btn btn-primary btn-sm"> Doctor List</a>
+						<h3 class="box-title">Add Product</h3>
+						<a href="product-list.php" class=" pull-right btn btn-primary btn-sm">Product List</a>
 					</div>
 					<!-- /.box-header -->
 					<!-- form start -->
-					<div style="padding:20px;">
-						<form id="defaultForm" method="post" class="" action="add-student.php">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class=" control-label">Doctor Name</label>
-									<div class="">
-										<input type="text" class="form-control" name="shopname" placeholder="Enter Doctor name" />
-									</div>
-								</div>
-								<div class="form-group">
-									<label>Designation</label>
-									<div class="">
-										<input type="text" class="form-control" name="ownername" placeholder="Enter Designation" />
-									</div>
-								</div>
-								<div class="form-group ">
-									<label class=" control-label">Mobile Number</label>
-									<div class="">
-										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter Mobile Number" />
-									</div>
-								</div>
-								<div class="form-group ">
-									<label class=" control-label">Confirm Password</label>
-									<div class="">
-										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter confirm Password" />
-									</div>
-								</div>
-							</div>
-							<!--school details-->
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class=" control-label">Email Id</label>
-									<div class="">
-										<input type="text" class="form-control" name="email" placeholder="Enter Email ID" />
-									</div>
-								</div>
-								<div class="form-group">
-									<label class=" control-label">Address</label>
-									<div class="">
-										<input type="text" class="form-control" name="address" placeholder="Enter Address" />
-									</div>
-								</div>
-								<div class="form-group ">
-									<label class=" control-label">Password</label>
-									<div class="">
-										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter Password" />
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-lg-4 col-lg-offset-10">
-									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Add Doctor</button>
-								</div>
-							</div>
-						</form>
-						<div class="clearfix">&nbsp;</div>
+					<div class="row" style="padding:20px;">
+						<form id="defaultForm" method="post" class="m-b-30" action="new-add.php">
+					
+								<table id="myTable" class=" table order-list">
+    <thead>
+        <tr>
+            <td>Image</td>
+            <td>Name</td>
+            <td>Price</td>
+			<td>Net Weight</td>
+            <td>No of pieces</td>
+            <td>Discount</td>
+            <td>Preorder</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            
+			<td class="col-sm-2">
+                <input type="file" name="name" class="form-control" />
+            </td>
+            <td class="col-sm-2">
+                <input type="mail" name="mail"  class="form-control"/>
+            </td>
+            <td class="col-sm-1">
+                <input type="text" name="phone"  class="form-control"/>
+            </td>
+			<td class="col-sm-1">
+                <input type="text" name="name" class="form-control" />
+            </td>
+            <td class="col-sm-1">
+                <input type="number" name="mail"  class="form-control"/>
+            </td>
+            <td class="col-sm-2">
+                <input type="text" name="phone"  class="form-control"/>
+            </td>
+		<td class="col-sm-2">
+                <input type="text" name="phone"  class="form-control"/>
+            </td>
+            <td class="col-sm-2"><a class="deleteRow"></a>
+
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="7" style="text-align: left;">
+                <input type="button" class="btn btn-lg btn-block " id="addrow" value="Add Row" />
+            </td>
+        </tr>
+        <tr>
+        </tr>
+    </tfoot>
+</table>
+								
+								<div class="m-t-20 text-center">
+									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Upload</button>
+																	</div>
+							</form>
 					</div>
 				</div>
 				<!-- /.box -->
@@ -88,6 +91,51 @@
 <!-- /.row -->
 </section>
 </div>
+<script>
+  $(document).ready(function () {
+    var counter = 0;
+
+    $("#addrow").on("click", function () {
+        var newRow = $("<tr>");
+        var cols = "";
+
+        cols += '<td><input type="file" class="form-control" name="name' + counter + '"/></td>';
+        cols += '<td><input type="text" class="form-control" name="mail' + counter + '"/></td>';
+        cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+ cols += '<td><input type="text" class="form-control" name="name' + counter + '"/></td>';
+        cols += '<td><input type="text" class="form-control" name="mail' + counter + '"/></td>';cols += '<td><input type="text" class="form-control" name="mail' + counter + '"/></td>';
+        cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+        cols += '<td><input type="button" class="ibtnDel btn btn-md btn-danger "  value="Delete"></td>';
+        newRow.append(cols);
+        $("table.order-list").append(newRow);
+        counter++;
+    });
+
+
+
+    $("table.order-list").on("click", ".ibtnDel", function (event) {
+        $(this).closest("tr").remove();       
+        counter -= 1
+    });
+
+
+});
+
+
+
+function calculateRow(row) {
+    var price = +row.find('input[name^="price"]').val();
+
+}
+
+function calculateGrandTotal() {
+    var grandTotal = 0;
+    $("table.order-list").find('input[name^="price"]').each(function () {
+        grandTotal += +$(this).val();
+    });
+    $("#grandtotal").text(grandTotal.toFixed(2));
+}
+</script>
 <script type="text/javascript">
 	$(document).ready(function() {
 	    // Generate a simple captcha

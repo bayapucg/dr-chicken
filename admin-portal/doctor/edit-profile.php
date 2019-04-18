@@ -2,12 +2,12 @@
 <div class="content-wrapper">
 	<section class="content-header">
 		<h1>
-       Doctor 
+       User Profile 
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Doctor</li>
+			<li class="active">Edit</li>
 		</ol>
 	</section>
 	<section class="content">
@@ -17,8 +17,8 @@
 				<!-- general form elements -->
 				<div class="box box-primary">
 					<div class="box-header with-border">
-						<h3 class="box-title">Add Doctor</h3>
-						<a href="doctor_list.php" class=" pull-right btn btn-primary btn-sm"> Doctor List</a>
+						<h3 class="box-title">Edit Profile</h3>
+						
 					</div>
 					<!-- /.box-header -->
 					<!-- form start -->
@@ -26,15 +26,15 @@
 						<form id="defaultForm" method="post" class="" action="add-student.php">
 							<div class="col-md-6">
 								<div class="form-group">
-									<label class=" control-label">Doctor Name</label>
+									<label class=" control-label"> Name</label>
 									<div class="">
-										<input type="text" class="form-control" name="shopname" placeholder="Enter Doctor name" />
+										<input type="text" class="form-control" name="shopname" placeholder="Enter Shop name" />
 									</div>
 								</div>
 								<div class="form-group">
-									<label>Designation</label>
+									<label>Email Id</label>
 									<div class="">
-										<input type="text" class="form-control" name="ownername" placeholder="Enter Designation" />
+										<input type="text" class="form-control" name="ownername" placeholder="Enter Owner name" />
 									</div>
 								</div>
 								<div class="form-group ">
@@ -43,37 +43,31 @@
 										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter Mobile Number" />
 									</div>
 								</div>
-								<div class="form-group ">
-									<label class=" control-label">Confirm Password</label>
-									<div class="">
-										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter confirm Password" />
-									</div>
-								</div>
 							</div>
 							<!--school details-->
 							<div class="col-md-6">
 								<div class="form-group">
-									<label class=" control-label">Email Id</label>
+									<label class=" control-label">Qualification</label>
 									<div class="">
 										<input type="text" class="form-control" name="email" placeholder="Enter Email ID" />
 									</div>
 								</div>
 								<div class="form-group">
-									<label class=" control-label">Address</label>
+									<label class=" control-label">Location</label>
 									<div class="">
 										<input type="text" class="form-control" name="address" placeholder="Enter Address" />
 									</div>
 								</div>
-								<div class="form-group ">
-									<label class=" control-label">Password</label>
+								<div class="form-group">
+									<label class=" control-label">Profile Pic</label>
 									<div class="">
-										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter Password" />
+										<input type="file" class="form-control" name="address" placeholder="Enter Address" />
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-lg-4 col-lg-offset-10">
-									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Add Doctor</button>
+									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Edit</button>
 								</div>
 							</div>
 						</form>
