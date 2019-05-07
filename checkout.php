@@ -161,7 +161,7 @@
 		<hr style="margin-bottom:0">
 		<div class="shopping-cart-btn">
 		<span class="pull-right h2">
-			<button class="btn btn-primary btn-sm">Checkout</button>
+			<a href="page_success.php"><button class="btn btn-primary btn-sm">Checkout</button></a>
 				
 			</span>
 			<span class="pull-right h3 mx-5">

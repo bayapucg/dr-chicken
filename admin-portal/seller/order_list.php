@@ -15,14 +15,73 @@
 	<section class="content">
 		<div class="box">
 			<div class="box-header bg-primary">
-				<div class="col-md-6">
-					<input type="text" class="form-control" placeholder="Search.." name="search">
+				<div class="col-md-3">
+				 <select class="form-control">
+				<option>Select Day</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				<option>10</option>
+				<option>11</option>
+				<option>12</option>
+				<option>13</option>
+				<option>14</option>
+				<option>15</option>
+				<option>16</option>
+				<option>17</option>
+				<option>18</option>
+				<option>19</option>
+				<option>20</option>
+				<option>21</option>
+				<option>22</option>
+				<option>23</option>
+				<option>24</option>
+				<option>25</option>
+				<option>26</option>
+				<option>27</option>
+				<option>28</option>
+				<option>29</option>
+				<option>30</option>
+				<option>31</option>
+              </select>
 				</div>
+				<div class="col-md-3">
+				 <select class="form-control">
+				<option>Select Month</option>
+				<option>January</option>
+				<option>Febrary</option>
+				<option>March</option>
+				<option>April</option>
+				<option>May</option>
+				<option>June</option>
+				<option>July</option>
+				<option>August</option>
+				<option>September</option>
+				<option>October</option>
+				<option>November</option>
+				<option>December</option>
+              </select>
+				</div>
+				<div class="col-md-3">
+					 <select class="form-control">
+				<option>Select Year</option>
+				<option>2016</option>
+				<option>2017</option>
+				<option>2018</option>
+				<option>2019</option>
+              </select>
+				</div>
+				<div class="col-md-3">
 				<div class="col-md-6">
-					<div class="">
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-print"></i> Print</button>
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-upload"></i> Import</button>
-					</div>
+				<button class="btn btn-default">Submit</button></div>
+				<div class="col-md-6">
+				<button class="btn btn-default"><i class="fa fa-print" aria-hidden="true"></i>Print</button></div>
 				</div>
 			</div>
 			<!-- /.box-header -->
@@ -78,4 +137,17 @@
 	</section>
 	<!-- /.content -->
 </div>
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>
 <?php include( "footer.php"); ?>

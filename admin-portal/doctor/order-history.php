@@ -14,16 +14,8 @@
 	<!-- Main content -->
 	<section class="content">
 		<div class="box">
-			<div class="box-header bg-primary">
-				<div class="col-md-6">
-					<input type="text" class="form-control" placeholder="Search by shopname.." name="search">
-				</div>
-				<div class="col-md-6">
-					<div class="">
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-print"></i> Print</button>
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-upload"></i> Import</button>
-					</div>
-				</div>
+			<div class="box box-primary">
+				
 			</div>
 			<!-- /.box-header -->
 			<div class="box-body table-responsive">
@@ -72,4 +64,17 @@
 	</section>
 	<!-- /.content -->
 </div>
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>
 <?php include( "footer.php"); ?>

@@ -15,18 +15,11 @@
 	<section class="content">
 		<div class="box">
 			<div class="box-header bg-primary">
-				<div class="col-md-6">
-					<select class="form-control">
-						<option>Select ShopName</option>
-						<option>1st class</option>
-						<option>2nd class</option>
-						<option>3rd class</option>
-					</select>
+				<div class="col-md-10">
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-2">
 					<div class="">	<a class="btn btn-default st-btn add-student-btn" href="add_seller.php"><i class="fa fa-plus"></i> Add Seller</a>
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-print"></i> Print</button>
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-upload"></i> Import</button>
+						
 					</div>
 				</div>
 			</div>
@@ -83,4 +76,17 @@
 	</section>
 	<!-- /.content -->
 </div>
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>
 <?php include( "footer.php"); ?>

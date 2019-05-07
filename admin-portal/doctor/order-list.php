@@ -14,16 +14,8 @@
 	<!-- Main content -->
 	<section class="content">
 		<div class="box">
-			<div class="box-header bg-primary">
-				<div class="col-md-6">
-					<input type="text" class="form-control" placeholder="Search by Productname.." name="search">
-				</div>
-				<div class="col-md-6">
-					<div class="">
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-print"></i> Print</button>
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-upload"></i> Import</button>
-					</div>
-				</div>
+			<div class="box box-primary">
+				
 			</div>
 			<!-- /.box-header -->
 			<div class="box-body table-responsive">
@@ -33,9 +25,9 @@
 							<th>Sno</th>
 							<th>Order No</th>
 							<th>Mobile Number</th>
-							<th>Shop Name</th>
+							
 							<th>Product Name</th>
-							<th>Quality Price</th>
+							
 							<th>Ph Images</th>
 							<th>Action</th>
 						</tr>
@@ -45,9 +37,9 @@
 							<td>01</td>
 							<td>OR 05</td>
 							<td>8976564534</td>
-							<td>Olive</td>
+						
 							<td>Tandoori Chicken</td>
-							<td>300</td>
+							
 							<td>
 							<img id="myImg" src="../dist/img/phimg.jpg"  style="height:50px;width:50px">
 
@@ -75,9 +67,9 @@
 							<th>Sno</th>
 							<th>Order No</th>
 							<th>Mobile Number</th>
-							<th>Shop Name</th>
+							
 							<th>Product Name</th>
-							<th>Quality Price</th>
+							
 							<th>Ph Images</th>
 							<th>Action</th>
 						</tr>
@@ -111,5 +103,18 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+</script>
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
 </script>
 <?php include( "footer.php"); ?>

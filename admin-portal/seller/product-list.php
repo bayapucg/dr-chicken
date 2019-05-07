@@ -15,14 +15,12 @@
 	<section class="content">
 		<div class="box">
 			<div class="box-header bg-primary">
-				<div class="col-md-6">
-					<input type="text" class="form-control" placeholder="Search by name.." name="search">
+				<div class="col-md-10">
+					
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-2">
 					<div class="">	<a class="btn btn-default st-btn add-student-btn" href="add-product.php"><i class="fa fa-plus"></i> Add Product</a>
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-print"></i> Print</button>
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-upload"></i> Import</button>
-					</div>
+						</div>
 				</div>
 			</div>
 			<!-- /.box-header -->
@@ -88,4 +86,17 @@
 	</section>
 	<!-- /.content -->
 </div>
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>
 <?php include( "footer.php"); ?>
