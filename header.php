@@ -54,11 +54,12 @@
         <div class="cnt-account">
           <ul class="list-unstyled">
             <li>
-				<i style="font-size:20px;color:#f5f5f5;" class="fa fa-map-marker" aria-hidden="true"></i>
+				<i style="font-size:20px;color:#f5f5f5;"  class="fa fa-map-marker toggle-vechile-info-btn" aria-hidden="true"></i>
+				<li><a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Bottom</a></li>
 			</li>  
 			<li>
 				<form>
-				<input style="border-top:0px;border-left:0px;border-right:0px;background-color:#ff5722;border-radius:0px;color:#fff;border-bottom:1px solid #f5f5f578" class="form-control location-de" value="Kukkatpalli" type="text">
+				<input  style="border-top:0px;border-left:0px;border-right:0px;background-color:#ff5722;border-radius:0px;color:#fff;border-bottom:1px solid #f5f5f578" class="form-control location-de" value="Kukkatpalli" type="text">
 				</form>
 			</li>
             <li><a href="profile.php"><i class="icon fa fa-user"></i>My Account</a></li>
@@ -216,4 +217,24 @@
   <!-- /.header-nav --> 
   <!-- ============================================== NAVBAR : END ============================================== --> 
   
+
+  <!-- Modal -->
+  
+  
+</div>
 </header>
+<script>
+	$(document).ready(function(){
+	  $(".toggle-vechile-info-btn").click(function(){
+	    $("#toggle-vechile-info").toggle();
+	  });
+	});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        placement : 'bottom',
+        trigger : 'hover'
+    });
+});
+</script>

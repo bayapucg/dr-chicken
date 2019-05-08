@@ -3,27 +3,32 @@
 
 <!-- ============================================== HEADER : END ============================================== -->
 <div class="container">
-	<div class="fade in" id="" role="dialog" style="">
+  <!-- Trigger the modal with a button -->
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="">
     <div class="modal-dialog">
     
       <!-- Modal content-->
       <div class="modal-content">
-        <div class="modal-header">
+       <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          
         </div>
         <div class="modal-body">
-          <p>Some text in the modal.</p>
+          <img src="assets/images/CouponCodes.png" style="width:100%;height:250px"/>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+       <!-- <div class="modal-footer">
+          
+        </div>-->
       </div>
       
     </div>
   </div>
   
 </div>
+
 <div class="body-content" id="top-banner-and-menu" style="border-top:2px solid #f44336">
 <div class="row"> 
       <div class="col-xs-12 col-sm-12 col-md-12">  
@@ -727,6 +732,10 @@
   <!-- /.container --> 
 </div>
 <!-- /#top-banner-and-menu --> 
-
-
+<script>
+$(window).load(function()
+{
+    $('#myModal').modal('show');
+});
+</script>
 <?php include("footer.php"); ?>
