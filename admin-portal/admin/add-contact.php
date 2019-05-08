@@ -2,12 +2,12 @@
 <div class="content-wrapper">
 	<section class="content-header">
 		<h1>
-       Product 
+       Contact 
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Edit</li>
+			<li class="active">Contact</li>
 		</ol>
 	</section>
 	<section class="content">
@@ -17,88 +17,67 @@
 				<!-- general form elements -->
 				<div class="box box-primary">
 					<div class="box-header with-border">
-						<h3 class="box-title">Edit Product</h3>
-						<a href="product-list.php" class=" pull-right btn btn-primary btn-sm">Product List</a>
+						<h3 class="box-title">Add Contact</h3>
+						<a href="contact_list.php" class=" pull-right btn btn-primary btn-sm"> Contact List</a>
 					</div>
 					<!-- /.box-header -->
 					<!-- form start -->
-					<div class="row" style="padding:20px;">
-						<form id="defaultForm" method="post" class="m-b-30" action="add-product.php">
-					
-								<div class="row table-responsive"> 
-								<div class="col-md-10 col-md-offset-1"> 
-									<table class="table table-bordered table-hover" id="tab_logic">
-										<thead>
-											<tr >
-											<th class="text-center">
-													 CATEGORIES
-												</th>
-												<th class="text-center">
-													Image
-												</th>
-												<th class="text-center">
-													Name
-												</th>
-												<th class="text-center">
-													Price
-												</th>
-												<th class="text-center">
-													Net Weight
-												</th>
-												<th class="text-center">
-													No of Pieces
-												</th>
-												<th class="text-center">
-													Discount
-												</th>
-												<th class="text-center">
-													Preorder
-												</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr id='addr0'>
-											<td>
-													 <select class="form-control" id="sel1">
-														<option>Chicken</option>
-														<option>Goat & Lamb</option>
-														<option>Fish</option>
-														<option>Eggs</option>
-													  </select>
-												</td>
-												<td>
-													<input type="file" class="form-control">
-												</td>
-												<td>
-												<input type="text" name='name0'  placeholder='Enter Name' class="form-control" value="venkatesh"/>
-												</td>
-												<td>
-												<input type="text" name='name0'  placeholder='Enter Price' class="form-control" value="300"/>
-												</td>
-												<td>
-												<input type="text" name='name0'  placeholder='Enter Net Weight' class="form-control" value="250 gms"/>
-												</td>
-												<td>
-												<input type="text" name='name0'  placeholder='Enter No of Pieces' class="form-control" value="4"/>
-												</td>
-												<td>
-												<input type="text" name='name0'  placeholder='Enter Discount' class="form-control" value="20%"/>
-												</td>
-												<td>
-												<input type="text" name='name0'  placeholder='Enter Preorder' class="form-control" value="yes"/>
-												</td>
-											</tr>
-											<tr id='addr1'></tr>
-										</tbody>
-									</table>	
-									<a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a>
+					<div style="padding:20px;">
+						<form id="defaultForm" method="post" class="" action="add-student.php">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class=" control-label">Phone Number</label>
+									<div class="">
+										<input type="text" class="form-control" name="shopname" placeholder="Enter Phone number" />
+									</div>
 								</div>
+								<div class="form-group">
+									<label>Email Id</label>
+									<div class="">
+										<input type="text" class="form-control" name="ownername" placeholder="Enter Email Id" />
+									</div>
 								</div>
-								
-								<div class="m-t-20 text-center">
-									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Upload</button>
-																	</div>
-							</form>
+								<div class="form-group ">
+									<label class=" control-label">Facebook link</label>
+									<div class="">
+										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter Mobile Number" />
+									</div>
+								</div>
+								<div class="form-group ">
+									<label class=" control-label">Twitter Link</label>
+									<div class="">
+										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter confirm Password" />
+									</div>
+								</div>
+							</div>
+							<!--school details-->
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class=" control-label">Google plus</label>
+									<div class="">
+										<input type="text" class="form-control" name="email" placeholder="Enter Email ID" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label class=" control-label">Linked in</label>
+									<div class="">
+										<input type="text" class="form-control" name="address" placeholder="Enter Address" />
+									</div>
+								</div>
+								<div class="form-group ">
+									<label class=" control-label">Youtube link</label>
+									<div class="">
+										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter Password" />
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-4 col-lg-offset-10">
+									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Add contact</button>
+								</div>
+							</div>
+						</form>
+						<div class="clearfix">&nbsp;</div>
 					</div>
 				</div>
 				<!-- /.box -->
@@ -109,24 +88,6 @@
 <!-- /.row -->
 </section>
 </div>
-<script>
-    $(document).ready(function() {
-        var i = 1;
-        $("#add_row").click(function() {
-            $('#addr' + i).html("<td class='form-group'><input  name='text[]' type='text' placeholder='Enter CATEGORIES'  class='form-control input-md'></td><td class='form-group'><input name='image[]' type='file'  class='form-control input-md'  /> </td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Name'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Price'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Net Weight'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter No Of Pieces'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter discount'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Preorder'  class='form-control input-md'></td>");
-
-            $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
-            i++;
-        });
-        $("#delete_row").click(function() {
-            if (i > 1) {
-                $("#addr" + (i - 1)).html('');
-                i--;
-            }
-        });
-
-    });
-</script>
 <script type="text/javascript">
 	$(document).ready(function() {
 	    // Generate a simple captcha

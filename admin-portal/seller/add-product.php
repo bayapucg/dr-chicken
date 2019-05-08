@@ -30,6 +30,9 @@
 									<table class="table table-bordered table-hover" id="tab_logic">
 										<thead>
 											<tr >
+											<th class="text-center">
+													 CATEGORIES
+												</th>
 												<th class="text-center">
 													Image
 												</th>
@@ -55,6 +58,14 @@
 										</thead>
 										<tbody>
 											<tr id='addr0'>
+												<td>
+													 <select class="form-control" id="sel1">
+														<option>Chicken</option>
+														<option>Goat & Lamb</option>
+														<option>Fish</option>
+														<option>Eggs</option>
+													  </select>
+												</td>
 												<td>
 													<input type="file" class="form-control">
 												</td>
@@ -102,7 +113,7 @@
     $(document).ready(function() {
         var i = 1;
         $("#add_row").click(function() {
-            $('#addr' + i).html("<td class='form-group'><input name='image[]' type='file'  class='form-control input-md'  /> </td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Name'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Price'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Net Weight'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter No Of Pieces'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter discount'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Preorder'  class='form-control input-md'></td>");
+            $('#addr' + i).html("<td class='form-group'><input  name='text[]' type='text' placeholder='Enter CATEGORIES'  class='form-control input-md'></td><td class='form-group'><input name='image[]' type='file'  class='form-control input-md'  /> </td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Name'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Price'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Net Weight'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter No Of Pieces'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter discount'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Preorder'  class='form-control input-md'></td>");
 
             $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
             i++;

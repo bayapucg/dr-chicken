@@ -28,6 +28,7 @@
 				<table id="example1" class="table table-bordered table-striped">
 					<thead>
 						<tr>
+							<th>CATEGORIES</th>
 							<th>Image</th>
 							<th>Name</th>
 							<th>Price</th>
@@ -40,6 +41,7 @@
 					</thead>
 					<tbody>
 						<tr>
+						<td>chicken</td>
 							<td><img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/></td>
 							<td>Thadoori chicken</td>
 							<td>300</td>
@@ -53,6 +55,7 @@
 							</td>
 						</tr>
 						<tr>
+						<td>chicken</td>
 							<td><img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/></td>
 							<td>Thadoori chicken</td>
 							<td>300</td>
@@ -68,6 +71,7 @@
 					</tbody>
 					<tfoot>
 						<tr>
+							<th>CATEGORIES</th>
 							<th>Image</th>
 							<th>Name</th>
 							<th>Price</th>
