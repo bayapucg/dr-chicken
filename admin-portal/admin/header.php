@@ -174,6 +174,19 @@
 						</a>
 					</li>
 					<li class="treeview">
+						<a href="#"> <i class="fa fa-picture-o"></i>  <span> Banners</span>
+							<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+						</a>
+						<ul class="treeview-menu" style="display: none;">
+							<li> <a href="add_banner.php">Add Banner</a>
+							</li>
+							<li><a href="banner_list.php">Banner List</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
 						<a href="#"> <i class="fa fa-user-plus"></i>  <span> Seller</span>
 							<span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
