@@ -19,7 +19,7 @@
 					
 				</div>
 				<div class="col-md-2">
-					<div class="">	<a class="btn btn-default st-btn add-student-btn" href="add-product.php"><i class="fa fa-plus"></i> Add Product</a>
+					<div class="">	<a class="btn btn-default st-btn add-student-btn" href="add_banner.php"><i class="fa fa-plus"></i> Add Banner</a>
 						</div>
 				</div>
 			</div>
@@ -35,16 +35,16 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td><img src="..\assets\images\1.png" style="width:60px;height:50px"/></td>
+							<td><img src="..\dist\img\1.png" style="width:60px;height:50px"/></td>
 							<td>Thadoori chicken</td>
-							<td> <a href="edit-product.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
+							<td> <a href="edit-banner.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 								<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
 							</td>
 						</tr>
 						<tr>
-							<td><img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/></td>
+							<td><img src="..\dist\img\1.png" style="width:60px;height:50px"/></td>
 							<td>Thadoori chicken</td>
-							<td> <a href="edit_banner.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
+							<td> <a href="edit-banner.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 								<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
 							</td>
 						</tr>

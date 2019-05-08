@@ -44,7 +44,7 @@
 													<input type="file" class="form-control">
 												</td>
 												<td>
-												<input type="text" name='name0'  placeholder='Enter Content' class="form-control"/>
+												<input type="text" name='name0'  placeholder='Enter Content' value="healthy and fresh chicken" class="form-control"/>
 												</td>
 											</tr>
 											<tr id='addr1'></tr>
