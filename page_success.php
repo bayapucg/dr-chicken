@@ -33,10 +33,17 @@
 			<tbody>
 				<tr class="table_padding">
 					
-					<th colspan="2" >
-						<h4 >Apply Coupon <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></h4>
+					<th >
+						<h4 >Apply Coupon</h4>
 					</th>
-					
+					<td>
+						<div class="input-group">
+						  <input type="text" class="form-control" placeholder="Enter Coupon Code" name="">
+						  <div class="input-group-btn">
+							<button class="btn btn-primary" style="background-color:#ff5722" type="submit">Apply</button>
+						  </div>
+						</div>
+						</td>
 					
 					</tr>
 				<tr>
