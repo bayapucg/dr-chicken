@@ -58,7 +58,7 @@
           <ul class="list-unstyled">
             <li>
 				<i style="font-size:20px;color:#f5f5f5;"  class="fa fa-map-marker toggle-vechile-info-btn" aria-hidden="true"></i>
-				<li><a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Bottom</a></li>
+				
 			</li>  
 			<li>
 				<form>
