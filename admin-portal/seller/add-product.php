@@ -22,71 +22,97 @@
 					</div>
 					<!-- /.box-header -->
 					<!-- form start -->
-					<div class="row" style="padding:20px;">
-						<form id="defaultForm" method="post" class="m-b-30" action="add-product.php">
-					
-								<div class="row table-responsive"> 
-								<div class="col-md-10 col-md-offset-1"> 
-									<table class="table table-bordered table-hover" id="tab_logic">
-										<thead>
-											<tr >
-											<th class="text-center">
-													 CATEGORIES
-												</th>
-												<th class="text-center">
-													Image
-												</th>
-												<th class="text-center">
-													Name
-												</th>
-												<th class="text-center">
-													Price
-												</th>
-												<th class="text-center">
-													Net Weight
-												</th>
-												<th class="text-center">
-													No of Pieces
-												</th>
-												<th class="text-center">
-													Discount
-												</th>
-												<th class="text-center">
-													Preorder
-												</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr id='addr0'>
-												<td>
-													 <select class="form-control" id="sel1">
+					<div style="padding:20px;">
+						<form id="defaultForm" method="post" class="" action="add-product.php">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group col-md-6">
+									<label class=" control-label">Categories</label>
+									<div class="">
+										<select class="form-control" id="sel1">
 														<option>Chicken</option>
 														<option>Goat & Lamb</option>
 														<option>Fish</option>
 														<option>Eggs</option>
 													  </select>
-												</td>
+									</div>
+								</div>
+								<div class="form-group col-md-6">
+									<label>Image</label>
+									<div class="">
+										<input type="file" class="form-control" name="ownername" placeholder="Enter Owner name" />
+									</div>
+								</div>
+								
+							</div>
+							</div>
+							<!--school details-->
+							<div class="row">
+							<div class="col-md-12">
+								<div class="form-group col-md-6">
+									<label class=" control-label">name</label>
+									<div class="">
+										<input type="text" class="form-control" name="email" placeholder="Enter Name" />
+									</div>
+								</div>
+								<div class="form-group col-md-6">
+									<label class=" control-label">Price</label>
+									<div class="">
+										<input type="text" class="form-control" name="address" placeholder="Enter Price" />
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="row">
+							<div class="col-md-12">
+								<div class="form-group col-md-6">
+									<label class=" control-label">Net Weight</label>
+									<div class="">
+										<input type="text" class="form-control" name="email" placeholder="Enter Net Weight" />
+									</div>
+								</div>
+								<div class="form-group col-md-6">
+									<label class=" control-label">No of Pieces</label>
+									<div class="">
+										<input type="text" class="form-control" name="address" placeholder="Enter No of Pieces" />
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="row">
+							<div class="col-md-12">
+								<div class="form-group col-md-6">
+									<label class=" control-label">Discount</label>
+									<div class="">
+										<input type="text" class="form-control" name="email" placeholder="Enter Discount" />
+									</div>
+								</div>
+								<div class="form-group col-md-6">
+									<label class=" control-label">Preorder</label>
+									<div class="">
+										<input type="text" class="form-control" name="address" placeholder="Enter Preorder" />
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="row">
+							<div class="col-md-12">
+								<div class="form-group col-md-6">
+									<table class="table table-bordered table-hover" id="tab_logic">
+										<thead>
+											<tr>
+												<th class="text-center">
+													Image
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr id='addr0'>
+												
 												<td>
 													<input type="file" class="form-control">
 												</td>
-												<td>
-												<input type="text" name='name0'  placeholder='Enter Name' class="form-control"/>
-												</td>
-												<td>
-												<input type="text" name='name0'  placeholder='Enter Price' class="form-control"/>
-												</td>
-												<td>
-												<input type="text" name='name0'  placeholder='Enter Net Weight' class="form-control"/>
-												</td>
-												<td>
-												<input type="text" name='name0'  placeholder='Enter No of Pieces' class="form-control"/>
-												</td>
-												<td>
-												<input type="text" name='name0'  placeholder='Enter Discount' class="form-control"/>
-												</td>
-												<td>
-												<input type="text" name='name0'  placeholder='Enter Preorder' class="form-control"/>
-												</td>
+												
 											</tr>
 											<tr id='addr1'></tr>
 										</tbody>
@@ -95,10 +121,15 @@
 								</div>
 								</div>
 								
-								<div class="m-t-20 text-center">
-									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Upload</button>
-																	</div>
-							</form>
+							</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-4 col-lg-offset-10">
+									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Add Product</button>
+								</div>
+							</div>
+						</form>
+						<div class="clearfix">&nbsp;</div>
 					</div>
 				</div>
 				<!-- /.box -->
@@ -109,24 +140,6 @@
 <!-- /.row -->
 </section>
 </div>
-<script>
-    $(document).ready(function() {
-        var i = 1;
-        $("#add_row").click(function() {
-            $('#addr' + i).html("<td class='form-group'><input  name='text[]' type='text' placeholder='Enter CATEGORIES'  class='form-control input-md'></td><td class='form-group'><input name='image[]' type='file'  class='form-control input-md'  /> </td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Name'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Price'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Net Weight'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter No Of Pieces'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter discount'  class='form-control input-md'></td></td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Preorder'  class='form-control input-md'></td>");
-
-            $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
-            i++;
-        });
-        $("#delete_row").click(function() {
-            if (i > 1) {
-                $("#addr" + (i - 1)).html('');
-                i--;
-            }
-        });
-
-    });
-</script>
 <script type="text/javascript">
 	$(document).ready(function() {
 	    // Generate a simple captcha
@@ -349,5 +362,23 @@
 	        $('#defaultForm').data('bootstrapValidator').resetForm(true);
 	    });
 	});
+</script>
+<script>
+    $(document).ready(function() {
+        var i = 1;
+        $("#add_row").click(function() {
+            $('#addr' + i).html("<td class='form-group'><input name='image[]' type='file'  class='form-control input-md'  /> </td>");
+
+            $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
+            i++;
+        });
+        $("#delete_row").click(function() {
+            if (i > 1) {
+                $("#addr" + (i - 1)).html('');
+                i--;
+            }
+        });
+
+    });
 </script>
 <?php include( "footer.php"); ?>

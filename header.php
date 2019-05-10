@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,8 +59,36 @@
 			</li>  
 			<li>
 				<form>
-				<input  style="border-top:0px;border-left:0px;border-right:0px;background-color:#ff5722;border-radius:0px;color:#fff;border-bottom:1px solid #f5f5f578" class="form-control location-de" value="Kukkatpalli" type="text">
-				</form>
+				<input  data-toggle="modal" data-target="#location" style="border-top:0px;border-left:0px;border-right:0px;background-color:#ff5722;border-radius:0px;color:#fff;border-bottom:1px solid #f5f5f578" class="form-control location-de" value="Kukkatpalli" type="text">
+				
+  
+  <div class="modal" id="location">
+    <div class="modal-dialog">
+      <div class="modal-content">
+	 <div class="modal-header" style="color:#ff5722:box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+}
+
+">
+	 <button type="button" class="close" data-dismiss="modal">&times;</button>
+	 
+          <h4 class="modal-title text-center" >Choose Delivary Location</h4>
+          
+        </div>
+        <div class="modal-body">
+		<div class="input-group p">
+			<input type="text" class="form-control" placeholder="" name="">
+			<div class="input-group-btn">
+				<button class="btn btn-primary" style="background-color:#ff5722" type="submit">Use my location</button>
+			</div>
+		</div>
+						
+        </div>
+        <!--<div class="modal-footer">
+        </div>-->
+     </div>
+    </div>
+  </div>
+  				</form>
 			</li>
             <li><a href="profile.php"><i class="icon fa fa-user"></i>My Account</a></li>
             <li><a href="wishlist.php"><i class="icon fa fa-heart"></i>Wishlist</a></li>
@@ -233,11 +258,10 @@
 	  });
 	});
 </script>
-<script type="text/javascript">
+<script>
 $(document).ready(function(){
-    $('[data-toggle="popover"]').popover({
-        placement : 'bottom',
-        trigger : 'hover'
-    });
+  $("#location").click(function(){
+    $("").toggle(1000);
+  });
 });
 </script>

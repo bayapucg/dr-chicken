@@ -33,7 +33,7 @@
 			<tbody>
 				<tr class="table_padding">
 					
-					<th >
+					<th>
 						<h4 >Apply Coupon</h4>
 					</th>
 					<td>

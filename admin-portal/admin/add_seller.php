@@ -24,40 +24,49 @@
 					<!-- form start -->
 					<div style="padding:20px;">
 						<form id="defaultForm" method="post" class="" action="add-student.php">
-							<div class="col-md-6">
-								<div class="form-group">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group col-md-6">
 									<label class=" control-label">Shop Name</label>
 									<div class="">
 										<input type="text" class="form-control" name="shopname" placeholder="Enter Shop name" />
 									</div>
 								</div>
-								<div class="form-group">
+								<div class="form-group col-md-6">
 									<label>Owner Name</label>
 									<div class="">
 										<input type="text" class="form-control" name="ownername" placeholder="Enter Owner name" />
 									</div>
 								</div>
-								<div class="form-group ">
+								
+							</div>
+							</div>
+							<!--school details-->
+							<div class="row">
+							<div class="col-md-12">
+								<div class="form-group col-md-6">
+									<label class=" control-label">Email Id</label>
+									<div class="">
+										<input type="text" class="form-control" name="email" placeholder="Enter Email ID" />
+									</div>
+								</div>
+								<div class="form-group col-md-6">
+									<label class=" control-label">Address</label>
+									<div class="">
+										<input type="text" class="form-control" name="address" placeholder="Enter Address" />
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="row">
+							<div class="col-md-12">
+							<div class="form-group col-md-6">
 									<label class=" control-label">Mobile Number</label>
 									<div class="">
 										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter Mobile Number" />
 									</div>
 								</div>
 							</div>
-							<!--school details-->
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class=" control-label">Email Id</label>
-									<div class="">
-										<input type="text" class="form-control" name="email" placeholder="Enter Email ID" />
-									</div>
-								</div>
-								<div class="form-group">
-									<label class=" control-label">Address</label>
-									<div class="">
-										<input type="text" class="form-control" name="address" placeholder="Enter Address" />
-									</div>
-								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-lg-4 col-lg-offset-10">

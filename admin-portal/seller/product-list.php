@@ -36,6 +36,7 @@
 							<th>No of Pieces</th>
 							<th>Discount</th>
 							<th>Preorder</th>
+							<th>Images</th>
 							<th>Edit / Delete</th>
 						</tr>
 					</thead>
@@ -49,7 +50,8 @@
 							<td>4</td>
 							<td>20%</td>
 							<td>Yes</td>
-							
+							<td><img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/>
+							<img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/></td>
 							<td> <a href="edit-product.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 								<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
 							</td>
@@ -63,7 +65,8 @@
 							<td>4</td>
 							<td>20%</td>
 							<td>Yes</td>
-							
+							<td><img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/>
+							<img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/></td>
 							<td> <a href="edit-product.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 								<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
 							</td>
@@ -79,6 +82,7 @@
 							<th>No of Pieces</th>
 							<th>Discount</th>
 							<th>Preorder</th>
+							<th>Images</th>
 							<th>Edit / Delete</th>
 						</tr>
 					</tfoot>
