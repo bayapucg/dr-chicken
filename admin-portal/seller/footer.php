@@ -67,10 +67,10 @@
         }
     );
 
-    //Date picker
-    $('#datepicker').datepicker({
-      autoclose: true
-    });
+     //Date picker
+	    $('.datepicker').datepicker({
+	      autoclose: true
+	    });
 
     //iCheck for checkbox and radio inputs
     $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({

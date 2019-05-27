@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="assets/css/animate.min.css">
 <link rel="stylesheet" href="assets/css/rateit.css">
 <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="assets/css/datepicker3.css">
 
 <!-- Icons/Glyphs -->
 <link rel="stylesheet" href="assets/css/font-awesome.css">

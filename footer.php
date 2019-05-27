@@ -1,4 +1,5 @@
 
+
 <footer id="footer" class="footer color-bg">
   <div class="footer-bottom">
     <div class="container">
@@ -131,6 +132,7 @@
 <script src="assets/js/bootstrap-select.min.js"></script> 
 <script src="assets/js/wow.min.js"></script> 
 <script src="assets/js/scripts.js"></script>
+<script src="assets/js/bootstrap-datepicker.js"></script>
 <script>
     $(document).ready(function () {
         $('#search').suggestionBox({
@@ -140,6 +142,7 @@
             topOffset: 0,
         }).loadSuggestions('suggestions.json');
     });
+	
 </script>
 </body>
 

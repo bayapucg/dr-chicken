@@ -62,7 +62,7 @@
 	    );
 	
 	    //Date picker
-	    $('#datepicker').datepicker({
+	    $('.datepicker').datepicker({
 	      autoclose: true
 	    });
 	

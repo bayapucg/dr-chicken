@@ -15,7 +15,30 @@
 	<section class="content">
 		<div class="box">
 			<div class="box box-primary">
-				
+				<div class="">
+								<div class="col-md-4">
+									<div class="form-group ">
+										<label>Period</label>
+										<input type="text" class="form-control pull-right datepicker">
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="form-group ">
+										<label>&nbsp;</label>
+										<div>
+											<button class="btn btn-primary">Go</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group ">
+										<label>&nbsp;</label>
+										<div>
+											<p class="text-center" style="background-color:#557a95;color:#fff;padding:7px;">Total Amount : 25000 </p>
+										</div>
+									</div>
+								</div>
+								</div>
 			</div>
 			<!-- /.box-header -->
 			<div class="box-body table-responsive">
