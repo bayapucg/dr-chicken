@@ -2,12 +2,12 @@
 <div class="content-wrapper">
 	<section class="content-header">
 		<h1>
-       Seller 
+       Banner 
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Seller</li>
+			<li class="active">Banner</li>
 		</ol>
 	</section>
 	<section class="content">
@@ -17,64 +17,47 @@
 				<!-- general form elements -->
 				<div class="box box-primary">
 					<div class="box-header with-border">
-						<h3 class="box-title">Add Seller</h3>
-						<a href="seller_list.php" class=" pull-right btn btn-primary btn-sm"> seller List</a>
+						<h3 class="box-title">Add Banner</h3>
+						<a href="banner_list.php" class=" pull-right btn btn-primary btn-sm">Banner List</a>
 					</div>
 					<!-- /.box-header -->
 					<!-- form start -->
-					<div style="padding:20px;">
-						<form id="defaultForm" method="post" class="" action="add-student.php">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group col-md-6">
-									<label class=" control-label">Shop Name</label>
-									<div class="">
-										<input type="text" class="form-control" name="shopname" placeholder="Enter Shop name" />
-									</div>
+					<div class="row" style="padding:20px;">
+						<form id="defaultForm" method="post" class="m-b-30" action="add_banner.php">
+					
+								<div class="row table-responsive"> 
+								<div class="col-md-10 col-md-offset-1"> 
+									<table class="table table-bordered table-hover" id="tab_logic">
+										<thead>
+											<tr >
+												<th class="text-center">
+													Image
+												</th>
+												<th class="text-center">
+													Content
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr id='addr0'>
+												<td>
+													<input type="file" class="form-control">
+												</td>
+												<td>
+												<input type="text" name='name0'  placeholder='Enter Content' value="healthy and fresh chicken" class="form-control"/>
+												</td>
+											</tr>
+											<tr id='addr1'></tr>
+										</tbody>
+									</table>	
+									<a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a>
 								</div>
-								<div class="form-group col-md-6">
-									<label>Owner Name</label>
-									<div class="">
-										<input type="text" class="form-control" name="ownername" placeholder="Enter Owner name" />
-									</div>
 								</div>
 								
-							</div>
-							</div>
-							<!--school details-->
-							<div class="row">
-							<div class="col-md-12">
-								<div class="form-group col-md-6">
-									<label class=" control-label">Email Id</label>
-									<div class="">
-										<input type="text" class="form-control" name="email" placeholder="Enter Email ID" />
-									</div>
-								</div>
-								<div class="form-group col-md-6">
-									<label class=" control-label">Address</label>
-									<div class="">
-										<input type="text" class="form-control" name="address" placeholder="Enter Address" />
-									</div>
-								</div>
-							</div>
-							</div>
-							<div class="row">
-							<div class="col-md-12">
-							<div class="form-group col-md-6">
-									<label class=" control-label">Mobile Number</label>
-									<div class="">
-										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter Mobile Number" />
-									</div>
-								</div>
-							</div>
-							</div>
-							<div class="form-group">
-								<div class="col-lg-4 col-lg-offset-10">
-									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Add Seller</button>
-								</div>
-							</div>
-						</form>
-						<div class="clearfix">&nbsp;</div>
+								<div class="m-t-20 text-center">
+									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Upload</button>
+																	</div>
+							</form>
 					</div>
 				</div>
 				<!-- /.box -->
@@ -85,6 +68,24 @@
 <!-- /.row -->
 </section>
 </div>
+<script>
+    $(document).ready(function() {
+        var i = 1;
+        $("#add_row").click(function() {
+            $('#addr' + i).html("<td class='form-group'><input name='image[]' type='file'  class='form-control input-md'  /> </td><td class='form-group'><input  name='text[]' type='text' placeholder='Enter Content'  class='form-control input-md'></td>");
+
+            $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
+            i++;
+        });
+        $("#delete_row").click(function() {
+            if (i > 1) {
+                $("#addr" + (i - 1)).html('');
+                i--;
+            }
+        });
+
+    });
+</script>
 <script type="text/javascript">
 	$(document).ready(function() {
 	    // Generate a simple captcha

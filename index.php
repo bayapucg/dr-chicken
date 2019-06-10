@@ -2,6 +2,33 @@
 
 
 <!-- ============================================== HEADER : END ============================================== -->
+<div class="container">
+  <!-- Trigger the modal with a button -->
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+       <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/CouponCodes.png" style="width:100%;height:250px"/>
+        </div>
+       <!-- <div class="modal-footer">
+          
+        </div>-->
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
 <div class="body-content" id="top-banner-and-menu" style="border-top:2px solid #f44336">
 <div class="row"> 
       <div class="col-xs-12 col-sm-12 col-md-12">  
@@ -40,52 +67,11 @@
         </div>
         
        
-        <!--<div class="info-boxes wow fadeInUp">
-          <div class="info-boxes-inner">
-            <div class="row">
-              <div class="col-md-6 col-sm-4 col-lg-4">
-                <div class="info-box">
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <h4 class="info-box-heading green">money back</h4>
-                    </div>
-                  </div>
-                  <h6 class="text">30 Days Money Back Guarantee</h6>
-                </div>
-              </div>
-       
-              
-              <div class="hidden-md col-sm-4 col-lg-4">
-                <div class="info-box">
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <h4 class="info-box-heading green">free shipping</h4>
-                    </div>
-                  </div>
-                  <h6 class="text">Shipping on orders over $99</h6>
-                </div>
-              </div>
-            
-              
-              <div class="col-md-6 col-sm-4 col-lg-4">
-                <div class="info-box">
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <h4 class="info-box-heading green">Special Sale</h4>
-                    </div>
-                  </div>
-                  <h6 class="text">Extra $5 off on all items </h6>
-                </div>
-              </div>
-            
-            </div>
-           
-          </div>
-         
-          
-        </div>-->
+        
 	  </div>
 	</div>
+	
+
   <div class="container-fluid">
     
 	  <div class="row mt-3"> 
@@ -746,6 +732,10 @@
   <!-- /.container --> 
 </div>
 <!-- /#top-banner-and-menu --> 
-
-
+<script>
+$(window).load(function()
+{
+    $('#myModal').modal('show');
+});
+</script>
 <?php include("footer.php"); ?>

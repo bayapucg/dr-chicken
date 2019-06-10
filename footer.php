@@ -1,4 +1,5 @@
 
+
 <footer id="footer" class="footer color-bg">
   <div class="footer-bottom">
     <div class="container">
@@ -108,11 +109,8 @@
       <div class="col-xs-12 col-sm-6 no-padding">
         <div class="clearfix payment-methods">
           <ul>
-            <li><img src="assets/images/payments/1.png" alt=""></li>
-            <li><img src="assets/images/payments/2.png" alt=""></li>
             <li><img src="assets/images/payments/3.png" alt=""></li>
             <li><img src="assets/images/payments/4.png" alt=""></li>
-            <li><img src="assets/images/payments/5.png" alt=""></li>
           </ul>
         </div>
         <!-- /.payment-methods --> 
@@ -134,6 +132,7 @@
 <script src="assets/js/bootstrap-select.min.js"></script> 
 <script src="assets/js/wow.min.js"></script> 
 <script src="assets/js/scripts.js"></script>
+<script src="assets/js/bootstrap-datepicker.js"></script>
 <script>
     $(document).ready(function () {
         $('#search').suggestionBox({
@@ -143,6 +142,7 @@
             topOffset: 0,
         }).loadSuggestions('suggestions.json');
     });
+	
 </script>
 </body>
 

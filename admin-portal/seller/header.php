@@ -234,7 +234,10 @@
           </a>
          <ul class="treeview-menu" style="display: none;">
             <li>
-              <a href="order_list.php">Order Lists</a>
+              <a href="order_view.php">Order </a>
+            </li> 
+			<li>
+              <a href="order_list.php">Order List</a>
             </li>
             
           </ul>

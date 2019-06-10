@@ -3,57 +3,54 @@
 	<!-- Content Header (Page header) -->
 	<section class="content-header">
 		<h1>
-       Order History
+       contact List
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Order History</li>
+			<li class="active">Contact List</li>
 		</ol>
 	</section>
 	<!-- Main content -->
 	<section class="content">
 		<div class="box">
-			<div class="box box-primary">
-				
+			<div class="box-header bg-primary">
+				<div class="col-md-10">
+				</div>
+				<div class="col-md-2">
+					<div class="">	<a class="btn btn-default st-btn add-student-btn" href="add-contact.php"><i class="fa fa-plus"></i> Add contact</a>
+						
+					</div>
+				</div>
 			</div>
 			<!-- /.box-header -->
 			<div class="box-body table-responsive">
 				<table id="example1" class="table table-bordered table-striped">
 					<thead>
 						<tr>
-							<th>Sno</th>
-							<th>Order No</th>
-							<th>Mobile Number</th>
-							<th>Shop Name</th>
-							<th>Product Name</th>
-							<th>Quality Price</th>
-							<th>Ph Images</th>
-							<th>Action</th>
+							<th>Phone number</th>
+							<th>EmailId</th>
+							<th>Facebook link</th>
+							<th>Twitter Link</th>
+							<th>Google plus</th>
+							<th>Linked In</th>
+							<th>Youtube link</th>
+							<th>Edit / Delete</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td>01</td>
-							<td>OR 05</td>
-							<td>8976564534</td>
-							<td>Olive</td>
-							<td>Tandoori Chicken</td>
-							<td>300</td>
-							<td><img src="../dist/img/phimg.jpg" style="height:50px;width:50px"/>
-							<td>Accepted</td>
-						</tr>
+						
 					</tbody>
 					<tfoot>
 						<tr>
-							<th>Sno</th>
-							<th>Order No</th>
-							<th>Mobile Number</th>
-							<th>Shop Name</th>
-							<th>Product Name</th>
-							<th>Quality Price</th>
-							<th>Ph Images</th>
-							<th>Action</th>
+							<th>Phone number</th>
+							<th>EmailId</th>
+							<th>Facebook link</th>
+							<th>Twitter Link</th>
+							<th>Google plus</th>
+							<th>Linked In</th>
+							<th>Youtube link</th>
+							<th>Edit / Delete</th>
 						</tr>
 					</tfoot>
 				</table>

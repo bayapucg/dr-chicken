@@ -15,14 +15,12 @@
 	<section class="content">
 		<div class="box">
 			<div class="box-header bg-primary">
-				<div class="col-md-6">
-					<input type="text" class="form-control" placeholder="Search by name.." name="search">
+				<div class="col-md-10">
+					
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-2">
 					<div class="">	<a class="btn btn-default st-btn add-student-btn" href="add-product.php"><i class="fa fa-plus"></i> Add Product</a>
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-print"></i> Print</button>
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-upload"></i> Import</button>
-					</div>
+						</div>
 				</div>
 			</div>
 			<!-- /.box-header -->
@@ -30,6 +28,7 @@
 				<table id="example1" class="table table-bordered table-striped">
 					<thead>
 						<tr>
+							<th>CATEGORIES</th>
 							<th>Image</th>
 							<th>Name</th>
 							<th>Price</th>
@@ -37,11 +36,13 @@
 							<th>No of Pieces</th>
 							<th>Discount</th>
 							<th>Preorder</th>
+							<th>Images</th>
 							<th>Edit / Delete</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
+						<td>chicken</td>
 							<td><img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/></td>
 							<td>Thadoori chicken</td>
 							<td>300</td>
@@ -49,12 +50,14 @@
 							<td>4</td>
 							<td>20%</td>
 							<td>Yes</td>
-							
+							<td><img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/>
+							<img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/></td>
 							<td> <a href="edit-product.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 								<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
 							</td>
 						</tr>
 						<tr>
+						<td>chicken</td>
 							<td><img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/></td>
 							<td>Thadoori chicken</td>
 							<td>300</td>
@@ -62,7 +65,8 @@
 							<td>4</td>
 							<td>20%</td>
 							<td>Yes</td>
-							
+							<td><img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/>
+							<img src="..\dist\img\chicken.jpg" style="width:60px;height:50px"/></td>
 							<td> <a href="edit-product.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 								<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
 							</td>
@@ -70,6 +74,7 @@
 					</tbody>
 					<tfoot>
 						<tr>
+							<th>CATEGORIES</th>
 							<th>Image</th>
 							<th>Name</th>
 							<th>Price</th>
@@ -77,6 +82,7 @@
 							<th>No of Pieces</th>
 							<th>Discount</th>
 							<th>Preorder</th>
+							<th>Images</th>
 							<th>Edit / Delete</th>
 						</tr>
 					</tfoot>
@@ -94,11 +100,19 @@
     $('#example2').DataTable({
       "paging": true,
       "lengthChange": false,
+<<<<<<< HEAD
       "searching": true,
+=======
+      "searching": false,
+>>>>>>> f6dc2c5c452f5b858ca78a91e8fb95f739a57359
       "ordering": true,
       "info": true,
       "autoWidth": false
     });
   });
 </script>
+<<<<<<< HEAD
 <?php include( "footer.php"); ?>
+=======
+<?php include( "footer.php"); ?>
+>>>>>>> f6dc2c5c452f5b858ca78a91e8fb95f739a57359

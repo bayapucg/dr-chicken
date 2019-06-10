@@ -174,6 +174,19 @@
 						</a>
 					</li>
 					<li class="treeview">
+						<a href="#"> <i class="fa fa-picture-o"></i>  <span> Banners</span>
+							<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+						</a>
+						<ul class="treeview-menu" style="display: none;">
+							<li> <a href="add_banner.php">Add Banner</a>
+							</li>
+							<li><a href="banner_list.php">Banner List</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
 						<a href="#"> <i class="fa fa-user-plus"></i>  <span> Seller</span>
 							<span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -206,7 +219,7 @@
             </span>
 						</a>
 						<ul class="treeview-menu" style="display: none;">
-							<li> <a href="order_list.php">Order Lists</a>
+							<li> <a href="order_list.php">Payments Lists</a>
 							</li>
 						</ul>
 					</li>
@@ -220,6 +233,19 @@
 							<li> <a href="add-doctor.php">add Doctor</a>
 							</li>
 							<li> <a href="doctor_list.php">Doctor List</a>
+							</li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#"> <i class="fa fa-phone"></i>  <span>Contact Us</span>
+							<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+						</a>
+						<ul class="treeview-menu" style="display: none;">
+							<li> <a href="add-contact.php">add Contact us</a>
+							</li>
+							<li> <a href="contact_list.php">contactus List</a>
 							</li>
 						</ul>
 					</li>

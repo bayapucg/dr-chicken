@@ -3,12 +3,12 @@
 	<!-- Content Header (Page header) -->
 	<section class="content-header">
 		<h1>
-       Doctor List
+       Banner List
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Doctor List</li>
+			<li class="active">Banner List</li>
 		</ol>
 	</section>
 	<!-- Main content -->
@@ -16,11 +16,11 @@
 		<div class="box">
 			<div class="box-header bg-primary">
 				<div class="col-md-10">
+					
 				</div>
 				<div class="col-md-2">
-					<div class="">	<a class="btn btn-default st-btn add-student-btn" href="add-doctor.php"><i class="fa fa-plus"></i> Add Doctor</a>
-						
-					</div>
+					<div class="">	<a class="btn btn-default st-btn add-student-btn" href="add_banner.php"><i class="fa fa-plus"></i> Add Banner</a>
+						</div>
 				</div>
 			</div>
 			<!-- /.box-header -->
@@ -28,43 +28,31 @@
 				<table id="example1" class="table table-bordered table-striped">
 					<thead>
 						<tr>
-							<th>Doctor Name</th>
-							<th>Designation</th>
-							<th>Mobile Number</th>
-							<th>Email Id</th>
-							<th>Address</th>
+							<th>Image</th>
+							<th>Content</th>
 							<th>Edit / Delete</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>royal chefs</td>
-							<td>Venkateswarlu</td>
-							<td>7864539823</td>
-							<td>venkateswarlu78@gmail.com</td>
-							<td>Plot No. 177, Sri Vani Nilayam, Hyderabad, Telangana - 500072.</td>
-							<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
+							<td><img src="..\dist\img\1.png" style="width:60px;height:50px"/></td>
+							<td>Thadoori chicken</td>
+							<td> <a href="edit-banner.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 								<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
 							</td>
 						</tr>
 						<tr>
-							<td>Venkatesh</td>
-							<td>Dental</td>
-							<td>7864539823</td>
-							<td>venkatesh67@gmail.com</td>
-							<td>Plot No. 177, Sri Vani Nilayam, Hyderabad, Telangana - 500072.</td>
-							<td> <a href="edit-seller.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
+							<td><img src="..\dist\img\1.png" style="width:60px;height:50px"/></td>
+							<td>Thadoori chicken</td>
+							<td> <a href="edit-banner.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 								<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
 							</td>
 						</tr>
 					</tbody>
 					<tfoot>
 						<tr>
-							<th>Doctor Name</th>
-							<th>Designation</th>
-							<th>Mobile Number</th>
-							<th>Email Id</th>
-							<th>Address</th>
+							<th>Image</th>
+							<th>Content</th>
 							<th>Edit / Delete</th>
 						</tr>
 					</tfoot>

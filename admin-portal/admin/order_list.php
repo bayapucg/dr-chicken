@@ -3,27 +3,42 @@
 	<!-- Content Header (Page header) -->
 	<section class="content-header">
 		<h1>
-       Order List
+       Payments List
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Order List</li>
+			<li class="active">Payments List</li>
 		</ol>
 	</section>
 	<!-- Main content -->
 	<section class="content">
 		<div class="box">
-			<div class="box-header bg-primary">
-				<div class="col-md-6">
-					<input type="text" class="form-control" placeholder="Search.." name="search">
-				</div>
-				<div class="col-md-6">
-					<div class="">
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-print"></i> Print</button>
-						<button id="ImportStudent" class="btn btn-default dropdown-toggle impt" title=""><i class="fa fa-upload"></i> Import</button>
-					</div>
-				</div>
+			<div class="box box-primary">
+				<div class="">
+								<div class="col-md-4">
+									<div class="form-group ">
+										<label>Period</label>
+										<input type="text" class="form-control pull-right datepicker">
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="form-group ">
+										<label>&nbsp;</label>
+										<div>
+											<button class="btn btn-primary">Go</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group ">
+										<label>&nbsp;</label>
+										<div>
+											<p class="text-center" style="background-color:#557a95;color:#fff;padding:7px;">Total Amount : 25000 </p>
+										</div>
+									</div>
+								</div>
+								</div>
 			</div>
 			<!-- /.box-header -->
 			<div class="box-body table-responsive">
@@ -69,4 +84,17 @@
 	</section>
 	<!-- /.content -->
 </div>
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>
 <?php include( "footer.php"); ?>

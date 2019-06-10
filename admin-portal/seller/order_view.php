@@ -1,14 +1,18 @@
 <?php include( "header.php"); ?>
+<head>
+<link rel="stylesheet" href="../dist/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="../dist/css/buttons.dataTables.min.css">
+</head>
 <div class="content-wrapper">
 	<!-- Content Header (Page header) -->
 	<section class="content-header">
 		<h1>
-       Order List
+       Order 
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Order List</li>
+			<li class="active">Order </li>
 		</ol>
 	</section>
 	<!-- Main content -->
@@ -16,32 +20,6 @@
 		<div class="box">
 			<div class="box box-primary">
 				
-			<div class="  ">
-			
-								<div class="col-md-4">
-									<div class="form-group ">
-									
-										<label>Period</label>
-										<input type="text" class="form-control pull-right datepicker">
-									</div>
-								</div>
-								<div class="col-md-5">
-									<div class="form-group ">
-										<label>&nbsp;</label>
-										<div>
-											<a href="order_view.php"><button class="btn btn-primary">Go</button></a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="form-group ">
-										<label>&nbsp;</label>
-										<div>
-											<p class="text-center" style="background-color:#557a95;color:#fff;padding:7px;">Total Amount : 25000 </p>
-										</div>
-									</div>
-								</div>
-								</div>	
 			</div>
 			<!-- /.box-header -->
 			<div class="box-body table-responsive">
@@ -71,8 +49,14 @@
 							<td>Online</td>
 							<td>300/-</td>
 							<td>Card</td>
-							<td>Accepted
- </td>
+							<td> <div class="dropdown ">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Action
+    <i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li><a href="#">accepted</a></li>
+      <li><a href="#">Rejected</a></li>
+    </ul>
+  </div> 	</td>
 						</tr>
 					</tbody>
 					<tfoot>
@@ -109,8 +93,16 @@
       "autoWidth": false
     });
   });
-  $('.datepicker').datepicker({
-	      autoclose: true
-	    });
 </script>
-<?php include( "footer.php"); ?>
+<?php include( "footer.php"); ?><script src="../dist/js/dataTables.buttons.min.js"></script>
+<script src="dist/js/buttons.print.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example1').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'print'
+        ]
+    } );
+} );
+</script>

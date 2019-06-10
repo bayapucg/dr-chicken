@@ -2,12 +2,12 @@
 <div class="content-wrapper">
 	<section class="content-header">
 		<h1>
-       Seller 
+       Contact 
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Seller</li>
+			<li class="active">Contact</li>
 		</ol>
 	</section>
 	<section class="content">
@@ -17,60 +17,63 @@
 				<!-- general form elements -->
 				<div class="box box-primary">
 					<div class="box-header with-border">
-						<h3 class="box-title">Add Seller</h3>
-						<a href="seller_list.php" class=" pull-right btn btn-primary btn-sm"> seller List</a>
+						<h3 class="box-title">Add Contact</h3>
+						<a href="contact_list.php" class=" pull-right btn btn-primary btn-sm"> Contact List</a>
 					</div>
 					<!-- /.box-header -->
 					<!-- form start -->
 					<div style="padding:20px;">
 						<form id="defaultForm" method="post" class="" action="add-student.php">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group col-md-6">
-									<label class=" control-label">Shop Name</label>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class=" control-label">Phone Number</label>
 									<div class="">
-										<input type="text" class="form-control" name="shopname" placeholder="Enter Shop name" />
+										<input type="text" class="form-control" name="shopname" placeholder="Enter Phone number" />
 									</div>
 								</div>
-								<div class="form-group col-md-6">
-									<label>Owner Name</label>
+								<div class="form-group">
+									<label>Email Id</label>
 									<div class="">
-										<input type="text" class="form-control" name="ownername" placeholder="Enter Owner name" />
+										<input type="text" class="form-control" name="ownername" placeholder="Enter Email Id" />
 									</div>
 								</div>
-								
-							</div>
-							</div>
-							<!--school details-->
-							<div class="row">
-							<div class="col-md-12">
-								<div class="form-group col-md-6">
-									<label class=" control-label">Email Id</label>
-									<div class="">
-										<input type="text" class="form-control" name="email" placeholder="Enter Email ID" />
-									</div>
-								</div>
-								<div class="form-group col-md-6">
-									<label class=" control-label">Address</label>
-									<div class="">
-										<input type="text" class="form-control" name="address" placeholder="Enter Address" />
-									</div>
-								</div>
-							</div>
-							</div>
-							<div class="row">
-							<div class="col-md-12">
-							<div class="form-group col-md-6">
-									<label class=" control-label">Mobile Number</label>
+								<div class="form-group ">
+									<label class=" control-label">Facebook link</label>
 									<div class="">
 										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter Mobile Number" />
 									</div>
 								</div>
+								<div class="form-group ">
+									<label class=" control-label">Twitter Link</label>
+									<div class="">
+										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter confirm Password" />
+									</div>
+								</div>
 							</div>
+							<!--school details-->
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class=" control-label">Google plus</label>
+									<div class="">
+										<input type="text" class="form-control" name="email" placeholder="Enter Email ID" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label class=" control-label">Linked in</label>
+									<div class="">
+										<input type="text" class="form-control" name="address" placeholder="Enter Address" />
+									</div>
+								</div>
+								<div class="form-group ">
+									<label class=" control-label">Youtube link</label>
+									<div class="">
+										<input type="text" class="form-control" name="mobilenumber" placeholder="Enter Password" />
+									</div>
+								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-lg-4 col-lg-offset-10">
-									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Add Seller</button>
+									<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Add contact</button>
 								</div>
 							</div>
 						</form>
