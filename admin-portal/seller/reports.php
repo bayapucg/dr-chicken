@@ -3,12 +3,12 @@
 	<!-- Content Header (Page header) -->
 	<section class="content-header">
 		<h1>
-       Payment List
+       Reports List
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Seller/Payment List</li>
+			<li class="active">Reports List</li>
 		</ol>
 	</section>
 	<!-- Main content -->
@@ -23,9 +23,11 @@
 							<th>Sno</th>
 							<th>Week 1 </th>
 							<th>No of kgs sold </th>
-							<th>Payment Online</th>
 							<th>Given rate</th>
+							<th>Admin rate</th>
 							<th>Amount to get </th>
+							<th>View orders </th>
+							
 							
 						</tr>
 					</thead>
@@ -34,9 +36,10 @@
 							<td>01</td>
 							<td>monday</td>
 							<td>20</td>
-							<td>Done</td>
+							<td>1000</td>
 							<td>1000</td>
 							<td>2000</td>
+							<td> <a href="reports-view.php" class="btn btn-primary btn-xs">View</a></td>
 							
 						</tr>
 					</tbody>

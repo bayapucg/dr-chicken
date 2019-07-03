@@ -226,6 +226,13 @@
          
         </li>
 		<li class="treeview">
+          <a href="reports.php">
+            <i class="fa fa-credit-card"></i> <span> Reports</span>
+          </a>
+         
+         
+        </li>
+		<li class="treeview">
           <a href="#">
             <i class="fa fa-shopping-cart"></i> <span>Orders</span>
             <span class="pull-right-container">
