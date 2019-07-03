@@ -14,7 +14,7 @@
 	<!-- Main content -->
 	<section class="content">
 		<div class="box">
-			<div class="box box-primary">
+			<!--<div class="box box-primary">
 				<div class="">
 								<div class="col-md-4">
 									<div class="form-group ">
@@ -40,42 +40,48 @@
 								</div>
 								</div>
 			</div>
-			<!-- /.box-header -->
+			 -->
 			<div class="box-body table-responsive">
 				<table id="example1" class="table table-bordered table-striped">
 					<thead>
 						<tr>
 							<th>Sno</th>
-							<th>Date</th>
-							<th>order received</th>
-							<th>Payment Online</th>
-							<th>Cash On Delivery</th>
-							<th>Amount pending</th>
-							<th>Status</th>
+							<th>Shop name  </th>
+							<th>given rate   </th>
+							<th>Our rate  </th>
+							<th>No kgs sold </th>
+							<th>Amount pending  </th>
+							<th>Online  </th>
+							<th>Cash on delivery </th>
+							<th>View cash details</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>01</td>
-							<td>05/05/2019</td>
-							<td>santosh dhaba</td>
-							<td>Done</td>
-							<td>Yes</td>
-							<td>No</td>
-							<td>Received</td>
+							<td></td>
+							<td></td>
+							<td>150</td>
+							<td>130</td>
+							<td>5</td>
+							<td>750</td>
+							<td>450</td>
+							<td>200</td>
+							<td><a href="payment-view.php" class="btn btn-primary btn-xs">View</a></td>
+							
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
 						</tr>
 					</tbody>
-					<tfoot>
-						<tr>
-							<th>Sno</th>
-							<th>Date</th>
-							<th>order received</th>
-							<th>Payment Online</th>
-							<th>Cash On Delivery</th>
-							<th>Amount pending</th>
-							<th>Status</th>
-						</tr>
-					</tfoot>
 				</table>
 			</div>
 			<!-- /.box-body -->
