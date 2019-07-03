@@ -23,7 +23,6 @@
 							<th>Sno</th>
 							<th>Week 1 </th>
 							<th>No of kgs sold </th>
-							<th>Payment Online</th>
 							<th>Given rate</th>
 							<th>Amount to get </th>
 							
@@ -34,7 +33,6 @@
 							<td>01</td>
 							<td>monday</td>
 							<td>20</td>
-							<td>Done</td>
 							<td>1000</td>
 							<td>2000</td>
 							
