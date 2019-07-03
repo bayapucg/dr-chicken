@@ -224,6 +224,14 @@
 						</ul>
 					</li>
 					<li class="treeview">
+						<a href="reports.php"> <i class="fa fa-credit-card"></i>  <span>Reports</span>
+							<span class="pull-right-container">
+              
+            </span>
+						</a>
+						
+					</li>
+					<li class="treeview">
 						<a href="#"> <i class="fa fa-user-md"></i>  <span>Doctor</span>
 							<span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
