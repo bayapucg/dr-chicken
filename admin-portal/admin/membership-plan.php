@@ -26,13 +26,13 @@
 								<div class="form-group col-md-6">
 									<label class=" control-label">Plan Name</label>
 									<div class="">
-										<input type="text" class="form-control" name="shopname" placeholder="Enter Plan name" />
+										<input type="text" class="form-control" name="planname" placeholder="Enter Plan name" />
 									</div>
 								</div>
 								<div class="form-group col-md-6">
 									<label>Amount</label>
 									<div class="">
-										<input type="text" class="form-control" name="ownername" placeholder="Enter Amount" />
+										<input type="text" class="form-control" name="amount" placeholder="Enter Amount" />
 									</div>
 								</div>
 								
@@ -64,7 +64,7 @@
 								<div class="form-group col-md-6">
 									<label class=" control-label">Discount Percentage</label>
 									<div class="">
-										<input type="text" class="form-control" name="address" placeholder="Enter Discount Percentage" />
+										<input type="text" class="form-control" name="discountpercentage" placeholder="Enter Discount Percentage" />
 									</div>
 								</div>
 							</div>
@@ -81,7 +81,13 @@
 										</select>
 									</div>
 								</div>
-							</div>
+							
+							<div class="form-group col-md-6">
+									<label>Delivery Charges</label>
+									<div class="">
+										<input type="text" class="form-control" name="deliverycharges" placeholder="Enter Delivery Charges" />
+									</div>
+								</div>
 							</div>
 							
 						</form>
