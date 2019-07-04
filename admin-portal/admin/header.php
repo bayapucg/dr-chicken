@@ -245,6 +245,14 @@
 						</ul>
 					</li>
 					<li class="treeview">
+						<a href="membership-plan.php"> <i class="fa fa-credit-card"></i>  <span>Membership Plan</span>
+							<span class="pull-right-container">
+              
+            </span>
+						</a>
+						
+					</li>
+					<li class="treeview">
 						<a href="#"> <i class="fa fa-phone"></i>  <span>Contact Us</span>
 							<span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
