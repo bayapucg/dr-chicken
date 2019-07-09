@@ -13,6 +13,15 @@
                       
 
                         <div class="form-group">
+                            <label class="control-label">Login As</label>
+                            <div class="">
+                                <select class="form-control">
+									<option>Select</option>
+									<option>wholesale </option>
+									<option>Retail</option>
+								</select>
+                            </div>
+                        </div>                        <div class="form-group">
                             <label class="control-label">Username</label>
                             <div class="">
                                 <input type="text" class="form-control" name="username" />
@@ -63,6 +72,15 @@
 	<h2 class="text-center">Create a new account</h2>
 	<p class="text-center">Create your new account.</p>
 	<form class="register-form outer-top-xs" role="form">
+	
+		<div class="form-group">
+	    	<label class="info-title" for="exampleInputEmail2">Signup As <span>*</span></label>
+			<select class="form-control unicase-form-control text-input">
+				<option>Select</option>
+				<option>wholesale </option>
+				<option>Retail</option>
+			</select>
+	  	</div>
 		<div class="form-group">
 	    	<label class="info-title" for="exampleInputEmail2">Email Address <span>*</span></label>
 	    	<input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail2" >
